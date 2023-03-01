@@ -14,3 +14,11 @@ def decrypt(text, shift):
             result += char # If character is not an alphabet, do not shift it.
 
     return result
+  
+#check the above function 
+text = input("Enter plaintext to be decrypted: ")
+shift = int(input("Enter shift number: "))
+
+print("Text  : " + text)
+print("Shift : " + str(shift))
+print("Cipher: " + decrypt(text, shift))
