@@ -14,3 +14,11 @@ def encrypt(text, shift):
             result += char # If character is not an alphabet, do not shift it.
 
     return result
+  
+#check the above function 
+text = input("Enter ciphertext to be encrypted: ")
+shift = int(input("Enter shift number: "))
+
+print("Text  : " + text)
+print("Shift : " + str(shift))
+print("Cipher: " + encrypt(text, shift))
